@@ -264,6 +264,7 @@ nav ul li a:hover{
         flex-direction: column-reverse;
         justify-content: flex-end;
         margin-top: 2rem;
+        overflow: hidden;
     }
     .about-section .about-text,
  .about-section .about-image{
