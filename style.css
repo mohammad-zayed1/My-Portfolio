@@ -263,14 +263,14 @@ nav ul li a:hover{
     .about-section{
         flex-direction: column-reverse;
         justify-content: flex-end;
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
     .about-section .about-text,
  .about-section .about-image{
     /* flex-basis: 50%; */
     /* justify-content: flex-start; */
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
  }
  .about-image{
    flex-basis: 0;
