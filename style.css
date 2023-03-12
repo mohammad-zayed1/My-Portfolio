@@ -72,9 +72,7 @@ header {
 .burger {
   display: none;
 }
-nav{
-    /* padding: 0 10rem; */
-}
+
 nav ul {
   display: flex;
 }
@@ -229,9 +227,7 @@ nav ul li a:hover {
   height: 22rem;
   border-radius: 50%;
 }
-@media (max-width: 1000px) {
 
-}
 @media only screen and (max-width: 1000px) {
   .about-image .border {
     width: 25rem;
@@ -328,9 +324,7 @@ main {
   background-color: var(--third-bg-color);
 }
 
-.title {
-  /* padding: 2rem 0 3rem; */
-}
+
 .title h2 {
   width: 17rem;
   font-size: 3rem;
@@ -386,24 +380,14 @@ main {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   width: 35rem;
 }
-/* @media (max-width:767px){
-    .projects .box{
-        width: 30rem;
-    }
-} */
-/* @media (max-width:1295px){
-    .projects .box{
-        width: 30rem;
-    }
-} */
+
 .projects .box img {
   height: 20rem;
 }
 .projects .box .links {
   background-color: var(--main-bg-color);
 }
-.projects .box .links .link {
-}
+
 .projects .box .links .link .icon {
   width: 4rem;
   height: 4rem;
