@@ -23,8 +23,27 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
 }
+
 ul {
   list-style-type: none;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
 /* end global rules */
 
@@ -32,6 +51,7 @@ ul {
 header {
   height: 100vh;
   background-color: var(--main-bg-color);
+ padding: 0 10rem;
   box-shadow: 0 11px 15px 0 rgba(0, 0, 0, 0.25);
   z-index: 1;
   position: relative;
@@ -41,19 +61,19 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0px 6px 5px 0 rgb(237 241 214 / 25%);
+   box-shadow: 0px 6px 5px 0 rgb(237 241 214 / 25%);
 }
 .logo {
   font-size: 4rem;
   color: var(--main-font-color);
   font-family: "Licorice", cursive;
-  padding: 0 10rem;
+  /* padding: 0 10rem; */
 }
 .burger {
   display: none;
 }
-nav {
-  padding: 0 10rem;
+nav{
+    /* padding: 0 10rem; */
 }
 nav ul {
   display: flex;
@@ -121,12 +141,14 @@ nav ul li a:hover {
     color: var(--main-font-color);
   }
 }
+
 .about-section {
   display: flex;
   justify-content: space-between;
   height: calc(100vh - 7.5rem);
-  padding: 0 10rem;
+   padding: 0 10rem;
 }
+
 .about-section .about-text,
 .about-section .about-image {
   display: flex;
@@ -150,13 +172,15 @@ nav ul li a:hover {
 .about-section .about-text .buttons {
   display: flex;
   align-items: center;
-  margin: 1rem 0 0 0rem;
+  margin: 1rem 0 0 0;
 }
 .about-section .about-text .buttons .button {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 2rem;
+  width:12.5rem;
+  margin-bottom: 1rem;
 }
 .about-section .about-text .buttons .button a {
   text-decoration: none;
@@ -194,18 +218,21 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 31rem;
-  height: 31rem;
+  width: 28rem;
+  height: 28rem;
   border-radius: 50%;
   border: 1px solid var(--secondary-font-color);
   box-shadow: 0 0 4px 9px rgb(255 255 255 / 25%);
 }
 .about-image .border img {
-  width: 25rem;
-  height: 25rem;
+  width: 22rem;
+  height: 22rem;
   border-radius: 50%;
 }
-@media only screen and (max-width: 900px) {
+@media (max-width: 1000px) {
+
+}
+@media only screen and (max-width: 1000px) {
   .about-image .border {
     width: 25rem;
     height: 25rem;
@@ -221,20 +248,36 @@ nav ul li a:hover {
     font-size: 2rem;
   }
 }
-@media only screen and (max-width: 767px) {
+
+@media only screen and (max-width: 800px) {
   header {
     padding: 0 2rem;
     height: fit-content;
+    /* padding-bottom: 2rem;  */
   }
+  .navbar{
+    padding: 0.5rem;
+  }
+  .navbar .logo {
+    padding-left: 1rem;
+  }
+  .navbar .burger{
+    padding-right: 0.5rem;
+  }
+
   .about-section {
     flex-direction: column-reverse;
     justify-content: flex-end;
     margin-top: 3rem;
-    padding-top: 1rem;
+    padding: 1rem 0 0 0 ;
     height: fit-content;
+    
+    /* overflow: hidden; */
   }
   .about-section .about-text,
   .about-section .about-image {
+    /* flex-basis: 50%; */
+    /* justify-content: flex-start; */
     align-items: center;
     margin-top: 1rem;
   }
@@ -254,7 +297,7 @@ nav ul li a:hover {
   .about-section .about-text {
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
   }
   .about-section .about-text .h2c {
     text-align: center;
@@ -263,6 +306,9 @@ nav ul li a:hover {
   .about-section .about-text p,
   .about-section .about-text .buttons {
     margin: 1rem;
+  }
+  .about-section .about-text .buttons {
+    flex-direction: column;
   }
 }
 @keyframes upDown {
@@ -274,15 +320,22 @@ nav ul li a:hover {
     transform: translateY(-15px);
   }
 }
+
 /* end header */
 /* start main */
 main {
+  /* padding: 5rem 10rem; */
   background-color: var(--third-bg-color);
+}
+
+.title {
+  /* padding: 2rem 0 3rem; */
 }
 .title h2 {
   width: 17rem;
   font-size: 3rem;
   margin: 0 auto;
+  /* padding: 1.5rem 0; */
   text-align: center;
   position: relative;
   color: var(--main-font-color);
@@ -329,17 +382,28 @@ main {
   overflow: hidden;
   outline: none;
   border: none;
+  /* border: 1px solid var(--secondary-bg-color); */
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   width: 35rem;
 }
-
+/* @media (max-width:767px){
+    .projects .box{
+        width: 30rem;
+    }
+} */
+/* @media (max-width:1295px){
+    .projects .box{
+        width: 30rem;
+    }
+} */
 .projects .box img {
   height: 20rem;
 }
 .projects .box .links {
   background-color: var(--main-bg-color);
 }
-
+.projects .box .links .link {
+}
 .projects .box .links .link .icon {
   width: 4rem;
   height: 4rem;
@@ -369,7 +433,7 @@ main {
   padding: 5rem 10rem;
   background-color: var(--main-bg-color);
   box-shadow: 0 11px 15px 0 rgba(0, 0, 0, 0.25),
-  0 -11px 15px 0 rgba(0, 0, 0, 0.25);
+    0 -11px 15px 0 rgba(0, 0, 0, 0.25);
   z-index: 1;
   position: relative;
 }
@@ -414,10 +478,12 @@ main {
 .contact .info .info-text {
   flex-basis: 60%;
   padding: 0 10rem;
+  /* flex-shrink: 1; */
 }
 .contact .info .info-text .info-row {
   display: flex;
   align-items: center;
+  /* justify-content: center; */
   margin-bottom: 2rem;
 }
 .contact .info .info-text .info-row .info-icon {
@@ -425,6 +491,7 @@ main {
   height: 5rem;
   border-radius: 50%;
   background-color: var(--third-bg-color);
+  /* border: 1px solid var(--secondary-bg-color); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -442,6 +509,7 @@ main {
 .contact .info .info-image img {
   max-width: 100%;
   width: 90%;
+  /* height: 80%; */
 }
 .contact .info .info-text .info-row a {
   transition: 0.3s;
@@ -450,10 +518,10 @@ main {
   text-decoration: none;
   color: var(--main-font-color);
 }
-.contact .info .info-text .info-row .number {
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: var(--main-font-color);
+.contact .info .info-text .info-row .number{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--main-font-color);
 }
 .contact .info .info-text .info-row a:hover {
   text-decoration: underline;
@@ -530,6 +598,7 @@ footer .copyright {
   text-align: center;
   color: var(--third-bg-color);
   font-size: 2rem;
-  margin-top: 3rem;
+  /* padding: 1rem 0; */
+  margin-top: 4rem;
 }
 /* end footer section */
