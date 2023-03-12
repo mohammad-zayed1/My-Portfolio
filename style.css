@@ -420,16 +420,131 @@ margin-bottom: 1rem;
 .skills .row{
     margin-top: 8rem;
 }
+.skills .row-2{
+    margin-top:4rem;
+}
 .skills .row .skill {
     
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
     background-color: var(--secondary-bg-color);
     border-radius: 50%;
+    box-shadow: 0 0 10px 1px white;
 }
 .skills .row .skill i {
-    font-size: 9rem;
-    color: white;
+    font-size: 5rem;
+    color: var(--third-bg-color);
+}
+.skills .row .skill span{
+    color: var(--third-bg-color);
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* end skills section */
+/* start contact section */
+.contact{
+    padding: 5rem 10rem; 
+}
+.contact .info{
+    
+    width: 90%;
+    height: 100%;
+    margin: 6rem auto auto auto;
+    background-color: var(--main-bg-color);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.contact .info .info-text{
+    flex-basis: 60%; 
+    padding:0 10rem;
+    /* flex-shrink: 1; */
+}
+.contact .info .info-text .info-row{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-bottom: 2rem;
+}
+.contact .info .info-text .info-row .info-icon{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--third-bg-color);
+    /* border: 1px solid var(--secondary-bg-color); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.contact .info .info-text .info-row .info-icon i{
+    font-size: 2.5rem;
+    color: var(--main-font-color);
+}
+.contact .info .info-image{
+    flex-basis: 40%;
+    background-color: var(--third-bg-color);
+    
+}
+.contact .info .info-image img{
+    max-width: 100%;
+    width: 90%;
+    /* height: 80%; */
+}
+.contact .info .info-text .info-row a{
+    transition: 0.3s;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    color:var(--main-font-color)
+}
+.contact .info .info-text .info-row a:hover{
+    text-decoration: underline;
+}
+@media (max-width:1100px){
+    .contact .info{
+        flex-direction: column-reverse;
+        width: 70%;
+    } 
+    .contact .info .info-text{
+        padding: 3rem 6rem;
+    }
+    .contact .info .info-image img{
+        width: 50%;
+    }
 
 }
-/* end skills section */
+@media (max-width:650px){
+    .contact{
+        padding: 3rem 0;
+    }
+    .contact .info{
+        width: 80%;
+    }
+    .contact .info .info-text .info-row{
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+    }
+    .contact .info .info-text .info-row .info-icon{
+        margin-bottom: 2rem;
+        width: 6rem;
+        height:6rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact .info .info-text .info-row a{
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .contact .info .info-image img{
+        width:70%;
+    }
+}
+.contact .info{}
+.contact .info{}
+/* end contact section */
