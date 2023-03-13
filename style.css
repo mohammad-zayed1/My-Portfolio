@@ -75,6 +75,7 @@ header {
 }
 .burger {
   display: none;
+  
 }
 
 nav ul {
@@ -262,7 +263,7 @@ nav ul li a:hover {
     padding-left: 1rem;
   }
   .navbar .burger{
-    padding-right: 0.5rem;
+    padding-right: 1.5rem;
   }
 
   .about-section {
