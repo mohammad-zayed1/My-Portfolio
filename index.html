@@ -36,12 +36,12 @@
     <header>
       <div class="navbar">
         <div class="logo">M-Zayed</div>
-        <div class="burger">
+        <div class="burger" >
           <div class="line"></div>
           <div class="line"></div>
           <div class="line"></div>
         </div>
-        <nav>
+        <nav id="nav-links" >
           <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -353,5 +353,17 @@
         AOS.init();
       </script>
     <!-- /animation -->
+    <!-- menu button script-->
+    <script>
+      const burgerIcon = document.querySelector('.burger');
+      const navLinks = document.getElementById('nav-links');
+
+      burgerIcon.addEventListener('click', () => {
+         navLinks.classList.toggle("show");
+        console.log("done");
+      });
+
+    </script>
+    <!-- /menu button script-->
   </body>
 </html>
